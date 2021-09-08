@@ -20,7 +20,7 @@ int main() {
     days = (input%WEEK_SECONDS)/DAY_SECONDS;
     hours = (input%DAY_SECONDS)/HOUR_SECONDS;
     minutes = (input%HOUR_SECONDS)/MINUTE_SECONDS;
-    seconds = (input%MINUTE_SECONDS)%MINUTE_SECONDS;
+    seconds = input%MINUTE_SECONDS;
 
     printf("%d sekunder er: %d uger, %d dage, %d timer, %d minutter og %d sekunder\n", input, weeks, days, hours, minutes, seconds);
     return 0;
